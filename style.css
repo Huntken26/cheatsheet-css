@@ -1,25 +1,67 @@
 :root {
-    
+    --purp: #E866EC;
+    --char: #33393F;
+    --white:white;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 header {
-    justify-content:center;
-    text-align: center;
-    padding: 20px;
-    margin: 1%;
+  padding: 20px;
+  text-align: center;
+  margin: 1%;
   }
   
   body {
-background-color: #33393F;
-color: #E866EC;
+background-color: var(--char);
+color: var(--purp);
   }
 
   h1 {
-    font-size: 150%;
+    font-size: 170%;
   }
 
   .h2header {
     display:inline;
-    color:white;
+    color:var(--white);
     text-align: center;
+    font-size: 90%;
+    margin: 5%;
+  }
+
+
+  .column {
+    border: 2px dotted white;
+    float: left;
+    width: 25%;
+    padding: 20px;
+    margin: 3%;
+    
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    padding: 10px;
   }
