@@ -1,0 +1,25 @@
+:root {
+    
+}
+
+header {
+    justify-content:center;
+    text-align: center;
+    padding: 20px;
+    margin: 1%;
+  }
+  
+  body {
+background-color: #33393F;
+color: #E866EC;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
+
+  .h2header {
+    display:inline;
+    color:white;
+    text-align: center;
+  }
